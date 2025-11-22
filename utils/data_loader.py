@@ -3,17 +3,17 @@ import pandas as pd
 
 @st.cache_resource
 def load_all_data():
-    projectos_forvia_clean = pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/projectos_forvia_clean.csv')
-    percentage_not_completed = pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/percentage_not_completed.csv')
-    region_domain_data = pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/region_domain_data.csv')
-    gr = pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/GR.csv')
-    war = pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/WAR.csv')
-    gonogo = pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/go_nogo.csv')
-    performance_derecho=pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/performance_derecho.csv')
-    performance_izquierdo= pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/performance_izquierdo.csv')
-    regiones= pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/regions_coordinates.csv')
-    time_to_pass= pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/time_to_pass.csv')
-    data= pd.read_csv('/Users/simomadrid/Desktop/Analitica/Forvia_SF/data/data.csv')
+    projectos_forvia_clean = pd.read_csv('data/projectos_forvia_clean.csv')
+    percentage_not_completed = pd.read_csv('data/percentage_not_completed.csv')
+    region_domain_data = pd.read_csv('data/region_domain_data.csv')
+    gr = pd.read_csv('data/GR.csv')
+    war = pd.read_csv('data/WAR.csv')
+    gonogo = pd.read_csv('data/go_nogo.csv')
+    performance_derecho=pd.read_csv('data/performance_derecho.csv')
+    performance_izquierdo= pd.read_csv('data/performance_izquierdo.csv')
+    regiones= pd.read_csv('data/regions_coordinates.csv')
+    time_to_pass= pd.read_csv('data/time_to_pass.csv')
+    data= pd.read_csv('data/data.csv')
     return (
         projectos_forvia_clean,
         percentage_not_completed,
